@@ -1,0 +1,152 @@
+body {
+    background: #151515!important;
+    color: #fff!important;
+    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px!important;
+}
+
+h1, h2, h3, h4, p, span {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.heading-xl {
+    font-size: 88px!important;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 48px!important;
+    font-weight: 700!important;
+}
+
+h3, h4 {
+    font-size: 24px!important;
+}
+
+.light-text {
+    color: #d9d9d9!important;
+}
+
+.green-underline-thick {
+    border-bottom: 5px solid #4EE1A0;
+}
+
+.green-underline-thin {
+    border-bottom: 2px solid #4EE1A0;
+}
+
+.circle-floating {
+    position: absolute;
+    bottom: 10%;
+    right: 35%;
+}
+
+img.circle-floating {
+    width: 150px!important;
+    height: 125px!important;
+}
+
+/* HERO */
+#heroText {
+    position: relative;
+}
+
+#heroText .container {
+    background: url('/starter-code/assets/images/image-profile-desktop.webp') no-repeat right;
+    background-size: contain;
+    padding-bottom: 90px;
+}
+
+#heroText .row:nth-of-type(2)::before {
+    content: url('/starter-code/assets/images/pattern-rings.svg');
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+/* SKILLS */
+
+
+#skills {
+    position: relative;
+}
+
+#skills .skill-grid::after  {
+    background: url('/starter-code/assets/images/pattern-rings.svg') no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    width: 25%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* PROJECTS */
+
+#projects h4 {
+    padding-top: 1.25rem;
+}
+
+#projects .project-section {
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+
+#contact {
+    background-color: #242424;
+}
+
+.contact-form-wrapper {
+    position: relative;
+}
+
+#contact .contact-form-row::before  {
+    background: url('/starter-code/assets/images/pattern-rings.svg') no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    width: 65%;
+    height: 40%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+}
+
+#contact textarea {
+    resize: none;
+}
+
+#contact input:not(#contactSubmit), #contact textarea {
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5)!important;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#contact::placeholder {
+    color: #fff;
+    opacity: .5;
+    text-transform: uppercase;
+}
+
+#contact input, #contact textarea {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+#contact input:focus, #contact textarea:focus {
+    outline: none;
+}
+
+#contactSubmit {
+    border-bottom: 2px solid #4EE1A0!important;
+}
